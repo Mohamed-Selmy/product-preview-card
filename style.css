@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: hsl(30, 38%, 92%);
+}
+
+.container {
+    /* background: hsl(0, 0%, 100%); */
+    width: 50%;
+    padding: 60px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+}
+
+.container .image img {
+    width: 300px;
+    height: 60vh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+/* 
+@media(min-width:1440px) {
+    .container {
+        width: 100%;
+    }
+} */
+
+.content {
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    height: 60vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.content .content-pro {
+    margin-left: 40px;
+}
+
+.content h4 {
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+    margin: 20px 0px;
+}
+
+.content h1 {
+
+    color: hsl(212, 21%, 14%);
+}
+
+.content p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin: 20px 0px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.price h2 .current-price {
+    font-size: 30px;
+    color: hwb(158 1% 66%);
+    margin-right: 60px;
+}
+
+.price .old-price {
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+    margin-right: 30px;
+}
+
+.add-to-cart {
+    width: 90%;
+    position: relative;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 20px 10px 40px;
+    margin: 30px 0px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add-to-cart:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.add-to-cart::before {
+    content: "\f07a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .content .content-pro {
+        margin: 20px;
+    }
+
+    .add-to-cart {
+        width: 100%;
+    }
+}
